@@ -10,7 +10,6 @@ impl Solver<i32, String> for Day14 {
         let values: Vec<i32> = Regex::new(r"-?\d+").unwrap().find_iter(file.as_str()).into_iter()
                                                 .map(|x| x.as_str().parse::<i32>().unwrap()).collect();
         
-        println!("{:?}", values);
         const H: usize = 103;
         const W: usize = 101;
         const SECONDS: i32 = 100;
